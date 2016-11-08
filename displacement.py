@@ -24,4 +24,24 @@ steps_residue = steps_residue % x4
 step5 = steps_residue // x5
 steps_residue = steps_residue % x5
 
-print(step1 + " " + step2 + " " + step3 + " " + step4 + " " + step5 + " " + steps_residue)
+print(
+    '''
+    Кол-во шагов длиной %s мм: %s
+    Кол-во шагов длиной %s мм: %s
+    Кол-во шагов длиной %s мм: %s
+    Кол-во шагов длиной %s мм: %s
+    Кол-во шагов длиной %s мм: %s
+    '''
+    % (x1,
+       step1,
+       x2,
+       step2,
+       x3,
+       step3,
+       x4,
+       step4,
+       x5,
+       step5,
+       ))
+
+input()
